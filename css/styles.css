@@ -45,7 +45,7 @@ div ul li a:active{
     color: red;
 }
 
-div button{
+.contact{
     width: 100px;
     height: 35px;
     border-radius: 20px;
@@ -59,6 +59,10 @@ div button:hover{
     background-color: #8B48BF;
     color: #fff;
     transform: scale(1.1);
+}
+
+.burguer{
+    display: none;
 }
 
 
@@ -105,8 +109,21 @@ h1{
     margin: 10px;
     align-self: flex-end;
     justify-self: flex-end;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba (255, 0, 0, .5);
+    border: 2px solid #8B48BF;
+    transition: all .5S  ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
+
+.right-container button:hover{
+    background-color: #8B48BF;
+    color: #fff;
+    transform: scale(1.1);
+}
 
 .purple-container{
     width: 100vw;
@@ -296,10 +313,364 @@ h1{
     width: 150px;
     height: 50px;
     border-radius: 25px;
+    transition: all .4s ease-in-out;
+}
+
+.above-footer button:hover{
+    transform: scale(1.1);
+}
+
+
+/*footer*/
+
+
+footer{
+    background-color: #1E1E26;
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.sec-left-container{
+    height: 90%;
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-container-footer{
+    width: 120px;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.left-container-footer a{
+    align-self: flex-end;
+}
+
+.ul{
+    height: 70%;
+    width: 30%;
+}
+
+.ul ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+
+.footer a{
+    color: #fff;
+}
+
+
+.ul-2{
+    height: 70%;
+    width: 30%;
+}
+
+.ul-2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.ul-2 a{
+    color: #fff;
+}
+
+.sec-ul{
+    display: flex;
+    width: 40%;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input input{
+    width: 200px;
+    height: 50px;
+    border: 2px solid #8B48BF;
+    border-radius: 25px;
+}
+
+.input button{
+    height: 50px;
+    width: 80px;
+    border-radius: 25px;
+}
+
+.input button:hover{
+    transform: none;
+}
+
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.input p{
+    color: #8C8C94;
+    font-size: 12.5px;
+}
+
+.copy{
+    display: none;
+    color: #8C8C94;
+    font-size: 12.5px;
 }
 
 
 
 
 
+@media (max-width:480px){
 
+    /*header*/
+
+    nav{
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+
+
+    div ul{
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .burguer{
+        display: flex;
+        margin-right: 50px;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*main*/
+
+    .sec-big-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100vw;
+        height: 740px;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .big-container{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+    }
+
+    .big-container img{
+        width: 400px;
+        height: 340px;
+        margin: 0;
+    }
+
+
+    .right-container{
+        width: 400px;
+        height: 350px;
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    h1{
+        margin: 0;
+    }
+
+
+    .right-container h2{
+        margin: 0;
+    }
+
+
+    .purple-container{
+        height: 306px;
+        background-color: #3CDDF3;
+        flex-direction: column;
+    }
+
+    .left-container-bottom {
+        margin: 15px;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+
+    .right-container-bottom{
+        margin: 15px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+
+    .sec-donec{
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .donec-container{
+        height: 100%;
+        flex-direction: column;
+        width: 95%;
+        margin: 0;
+    }
+
+    .donec-container-left{
+        width: 100%;
+        position: relative;
+    }
+
+    .button01{
+        margin: 0;
+        position: absolute;
+        width: 50px;
+        top: 10px;
+        right: 410px;
+    }
+
+    .donec-container-left h2{
+        background-color: rgba(139, 72, 191,.5);
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    .sec-articles{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 1400px;
+        width: 100vw;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .sec-articles article{
+        width: 100%;
+        height: 400px;
+        margin: 0;
+    }
+
+    article p{
+        width: 95%;
+        height: 30%;
+    }
+
+    .above-footer{
+        background-color: #3CDDF3;
+        height: 366px;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .above-footer div{
+        width: 70%;
+        text-align: center;
+    }
+
+    .above-footer button{
+        background-color: #232C50;
+        color: #fff;
+    }
+
+    /*footer*/
+
+
+    footer{
+        height: 535px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .input{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .input div{
+        width: 90%;
+    }
+
+
+    .input input{
+        width: 70%;
+    }
+
+    .input p{
+        display: none;
+    }
+
+    .sec-ul{
+        width: 100%;
+    }
+
+    .ul ul{
+        align-items: flex-start;
+    }
+
+    .ul-2 ul{
+        align-items: flex-start;
+    }
+
+    .sec-left-container{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .left-container-footer{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .left-container-footer-2{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .copy{
+        display: block;
+        justify-self: flex-start;
+        margin-bottom: 20px;
+    }
+
+}
